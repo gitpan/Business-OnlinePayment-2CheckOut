@@ -21,7 +21,9 @@ sub set_defaults {
   $self->path('/cgi-bin/Abuyers/purchase.2c');
   $self->build_subs('order_number');
   $self->build_subs('second_path');
+  $self->build_subs('proto');
   $self->second_path('/cgi-bin/Abuyers/purchase1.2c');
+  $self->proto('https://');
   $self->test_transaction('1');
 }
 
